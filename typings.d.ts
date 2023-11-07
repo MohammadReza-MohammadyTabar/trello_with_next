@@ -1,5 +1,5 @@
 interface Board{
-    column:Map<TypedColumn,Column>
+    columns:Map<TypedColumn,Column>
 }
 
 type TypedColumn="todo" | "doing" | "done"
@@ -9,7 +9,7 @@ interface Column{
     todos:Todo[]
 }
 
-interface Todo{
+interface Todo {
     $id:string ;
     $createdAt:string;
         title:string;

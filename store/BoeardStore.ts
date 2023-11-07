@@ -9,10 +9,12 @@ interface BoardState {
 
 export const useBoardStore = create<BoardState>((set)=>({
     board:{
-        column:new Map<TypedColumn,Column >()
+        columns:new Map<TypedColumn,Column >()
     },
     getBoard:async () =>{
         const board=await getTodosGroupedByColumn();
+        console.log(board);
+        
         set({board})
     }
 }))
