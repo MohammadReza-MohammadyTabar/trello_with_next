@@ -26,7 +26,7 @@ function Column({id,todos,index}:Props) {
                         snapshot.isDraggingOver ? "bg-green-200 ":"bg-white/50"
                       } `}
                       >
-                        {id}
+                        <h2>{id}</h2>
                       </div>
                   )}
                 </Droppable>
